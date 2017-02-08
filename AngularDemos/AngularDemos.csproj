@@ -73,6 +73,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularControllers\Demo1Controller.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular_1.6.2.js" />
     <Content Include="Views\Demo1.html" />
     <Content Include="Web.config" />
@@ -80,9 +82,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AngularControllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
