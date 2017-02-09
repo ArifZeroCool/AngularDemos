@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="M3">
+<head>
+    <title></title>
+    <script src="../Scripts/angular.min.js"></script>
+
+    <script src="../AngularControllers/ngRepeat.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body >
+    <div ng-controller="C3">
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name </th>
+                    <th>Last Name </th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="emp in employee">
+                    <td>{{emp.Firstname}}</td>
+                    <td>{{emp.Lastname}}</td>
+                    <td>{{emp.City}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
