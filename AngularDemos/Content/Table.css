@@ -1,0 +1,15 @@
+﻿table {
+    border-collapse: collapse;
+    font-family: 'Lucida Sans Unicode';
+}
+
+td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+th {
+    border: 1px solid;
+    padding: 5px;
+    text-align: left;
+}

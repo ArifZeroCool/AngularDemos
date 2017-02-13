@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="LikesDislikes">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../AngularControllers/LikesDislikes.js"></script>
+    <link href="../Content/Table.css" rel="stylesheet" />
+</head>
+<body >
+    <div ng-controller="LikesDislikesC">
+        <table>
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                    <th>Like/DisLike</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="technology in technologies">
+                    <td>{{technology.name}}</td>
+                    <td>{{technology.likes}}</td>
+                    <td>{{technology.dislikes}}</td>
+                    <td>
+                        <input type="button" value="Like" ng-click="incrementLikes(technology)" />
+                        <input type="button" value="DisLike" ng-click="incrementDisLikes(technology)" />
+                        <input type="button" value="Reset" ng-click="Reset(technology)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

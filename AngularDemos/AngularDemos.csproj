@@ -66,8 +66,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AngularControllers\Demo2.js" />
+    <Content Include="AngularControllers\LikesDislikes.js" />
     <Content Include="AngularControllers\ngRepeat.js" />
     <Content Include="Content\AustraliaFlag.png" />
+    <Content Include="Content\Table.css" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -82,6 +84,7 @@
     <Content Include="Scripts\angular_1.6.2.js" />
     <Content Include="Views\Demo1.html" />
     <Content Include="Views\Demo2.html" />
+    <Content Include="Views\LikesDislikes.html" />
     <Content Include="Views\ngRepeat.html" />
     <Content Include="Web.config" />
   </ItemGroup>
