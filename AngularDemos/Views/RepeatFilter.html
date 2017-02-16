@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html ng-app="RFilter">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../AngularControllers/RepeatFilter.js"></script>
+    <link href="../Content/Table.css" rel="stylesheet" />
+</head>
+<body ng-controller="FilterC">
+    <div>
+        <div>
+            Rows to Display: <input type="number" step="1" min="0" max="5" ng-model="RowLimit" />
+        </div>
+        <div>
+            Sort Column: <select ng-model="sortColumn">
+                <option value="name">Name ASC</option>
+                <option value="DOB">Date Of birth ASC</option>
+                <option value="gender">Gender ASC</option>
+                <option value="salary">Salary DESC</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                    <!--<th>Salary</th>-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees | limitTo:RowLimit | orderBy:sortColumn">
+                    <td>{{employee.name| uppercase}}</td>
+                    <td>{{employee.DOB | date:dd/MM/yyyy}}</td>
+                    <td>{{employee.gender| lowercase}}</td>
+                    <td>{{employee.salary|number:2}}</td>
+                    <!--<td>{{employee.salary | currency}}</td>-->
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>
